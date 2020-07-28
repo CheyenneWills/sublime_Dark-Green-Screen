@@ -1,0 +1,171 @@
+{
+    "name": "Dark-Green-Screen",
+    "author": "Cheyenne Wills",
+    "variables": {
+        "black": "hsl(0, 0%, 0%)",
+        "blue": "hsl(197, 86%, 59%)",
+        "blue2": "hsl(195, 100%, 60%)",
+        "blue3": "hsl(190, 81%, 67%)",
+        "blue4": "hsl(180, 100%, 72%)",
+        "blue5": "hsl(180, 100%, 50%)",
+        "blue6": "hsl(218, 100%, 74%)",
+        "blue7": "hsl(160, 100%, 75%)",
+        "green": "hsl(120, 100%, 50%)",
+        "green2": "hsl(146, 100%, 50%)",
+        "purple": "hsl(277, 82%, 65%)",
+        "purple2": "hsl(261, 100%, 75%)",
+        "purple3": "hsl(260, 95%, 75%)",
+        "purple4": "hsl(248, 75%, 52%)",
+        "red": "hsl(338, 95%, 56%)",
+        "white": "hsl(60, 36%, 96%)",
+        "yellow": "hsl(60, 81%, 69%)",
+        "yellow2": "hsl(54, 100%, 50%)",
+        "yellow3": "hsl(60, 83%, 18%)",
+        "yellow4": "hsl(80, 76%, 53%)"
+    },
+    "globals": {
+        "gutter_foreground_highlight":"var(yellow2)",
+        "foreground": "var(green)",
+        "background": "var(black)",
+        "caret": "var(blue)",
+        "invisibles": "var(purple)",
+        "line_highlight": "color(darkgray alpha(0.2)",
+        "selection": "color(var(purple4)  alpha(0.75))",
+    },
+    "rules": [
+
+        {
+            "name": "BYM",
+            "scope": "BYM",
+            "background":"color(var(purple3))",
+            //"font_style":"bold glow"
+        },
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(purple)",
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(yellow2)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(blue4)"
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant.language",
+            "foreground": "var(blue7)",
+            "font_style": "bold"
+        },
+       
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "var(blue7)"
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            //"foreground": ["var(green2)" , "hsl(146, 100%, 50%)",]
+            "foreground": ["hsl(114, 100%, 50%)" , "hsl(110, 90%, 25%)",]
+            //"foreground": ["color(var(limegreen))", "color(var(lime))"]
+
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(blue5)",
+            "font_style": "bold glow"
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "var(blue3)",
+            "font_style": "italic glow"
+        },
+        {
+            "name": "Class name",
+            "scope": "entity.name.class",
+            "foreground": "var(yellow)",
+            "font_style": "underline glow"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(yellow)",
+            "font_style": "italic underline"
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "foreground": "var(blue2)",
+            "font_style":"glow"
+        },
+         {
+            "name": "Label",
+            "scope": "entity.name.label",
+            "foreground": "var(blue2)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter",
+            "foreground": "var(blue6)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Tag name",
+            "scope": "entity.name.tag",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "Tag attribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(yellow4)"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function",
+            "foreground": "var(purple3)",
+            "font_style": "bold"
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "var(purple3)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(purple3)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Library variable",
+            "scope": "support.other.variable",
+            "foreground": "var(purple3)",
+            "font_style": "underline"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "foreground": "var(white)",
+            "background": "var(red)",
+        },
+        {
+            "name": "Invalid deprecated",
+            "scope": "invalid.deprecated",
+            "foreground": "var(white)",
+            "background": "var(purple2)",
+        }
+    ]
+}
